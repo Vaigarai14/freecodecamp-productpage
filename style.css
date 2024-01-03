@@ -15,11 +15,7 @@ body {
     background-color: whitesmoke;
 }
 
-header {
-    padding: 0;
-    margin: 0;
-    display: unset;
-}
+
 
 #navs {
     display: flex;
@@ -65,18 +61,17 @@ header {
         margin-bottom: 1em;
     }
 
+    #nav-bar,
     #navs img {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 1em;
     }
 
-    #nav-bar {
-        padding: 0;
-        display: inline;
-        text-align: center;
-    }
-
-    #nav-bar li {
-        padding: 0.2em;
+    #nav-bar li a {
+        padding: 0.5em;
         font-family: var(--primary-font);
     }
 }
@@ -91,16 +86,15 @@ header {
     padding-bottom: 1em;
 }
 
+#form p {
+    margin: 0;
+}
+
 #form>p,
 #primary-btn {
     font-weight: 700;
     font-size: 1.7em;
     font-family: var(--primary-font);
-}
-
-#form,
-p {
-    margin: 0.1em;
 }
 
 #dum #email {
@@ -162,20 +156,45 @@ p {
 
 @media screen and (max-width : 600px) {
 
+    #form p {
+        font-size: larger;
+        padding: 0;
+        margin: 2em 0;
+    }
+
+    #dum #email {
+        padding: 0.3rem;
+        width: 10rem;
+    }
+
     .paras {
         text-align: center;
     }
 
     .features {
         display: inline-block;
-        margin-bottom: 5em;
+        align-items: center;
+        margin-bottom: 4em;
     }
 
-    .icons,
+    #iconed {
+        display: flex;
+        justify-content: center
+    }
+
+    #iconed,
     .paras p {
         padding-bottom: 0.5em;
     }
 
+    #feature {
+        margin: 2em;
+    }
+
+    #primary-btn #submit {
+        font-size: small;
+        padding: 0.7em;
+    }
 }
 
 
@@ -187,11 +206,7 @@ p {
     justify-content: center;
 }
 
-#cards-row .cards {
-    margin: 0.5em;
-    border: 1px solid black;
-    padding-bottom: 2em;
-}
+
 
 .cards> :first-child {
     background-color: rgb(215, 215, 215);
@@ -206,6 +221,9 @@ p {
 .cards {
     text-align: center;
     width: 20vw;
+    margin: 0.5em;
+    border: 1px solid black;
+    padding-bottom: 2em;
 }
 
 .cards p {
@@ -260,13 +278,12 @@ p {
     font-family: var(--primary-font);
 }
 
-#footers {
-    display: inline-flex;
-}
+
 
 #footers li {
     list-style-type: none;
     padding: 0.5em;
+    display: inline-flex;
 }
 
 #footers li a {
