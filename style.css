@@ -115,7 +115,7 @@ p {
 
 @media screen and (max-width : 600px) {
 
-    #align {
+    #feature {
         text-align: center;
         margin: 3rem;
     }
@@ -135,20 +135,21 @@ p {
 
 /* features */
 
-#align {
+#feature {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 3rem;
 }
 
 .features {
     margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
 }
 
 .icons {
     display: block;
-    width: 3.5rem;
+    width: 4rem;
     color: var(--btn-color);
     margin: 0;
 }
@@ -157,6 +158,10 @@ p {
     font-weight: 600;
     font-size: 1.5em;
     font-family: var(--primary-font);
+}
+
+.features .paras {
+    display: inline-block;
 }
 
 /* videos */
@@ -233,7 +238,7 @@ p {
 /* footer */
 
 
-#check-3 {
+#footer {
     display: flex;
     justify-content: center;
 }
@@ -248,23 +253,23 @@ p {
     font-family: var(--primary-font);
 }
 
-#footer {
+#footers {
     display: inline-flex;
 }
 
-#footer li {
+#footers li {
     list-style-type: none;
     padding: 0.5em;
 }
 
-#footer li a {
+#footers li a {
     text-decoration: none;
     color: black
 }
 
 
 @media screen and (max-width : 600px) {
-    #check-3 {
+    #footer {
         display: flex;
         justify-content: center;
         background-color: #ddd;
