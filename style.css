@@ -23,7 +23,6 @@ header {
 }
 
 #navs #header-img {
-    width: 20em;
     height: 2em;
 }
 
@@ -47,6 +46,10 @@ header {
     #navs {
         display: inline;
         margin: 0;
+    }
+
+    #form :first-child {
+        text-align: center;
     }
 
     .check {
@@ -109,6 +112,27 @@ p {
     max-width: max-content;
 }
 
+
+@media screen and (max-width : 600px) {
+
+    #align {
+        text-align: center;
+        margin: 3rem;
+    }
+
+    #iconed {
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+    }
+
+    .iframe {
+        overflow: hidden;
+    }
+
+}
+
+
 /* features */
 
 #align {
@@ -122,14 +146,11 @@ p {
     margin-bottom: 5rem;
 }
 
-#icons .icons {
-    margin: 0 3em 5em 3em;
-}
-
-#align #icons .icons {
+.icons {
     display: block;
     width: 3.5rem;
     color: var(--btn-color);
+    margin: 0;
 }
 
 .features .heading {
@@ -138,16 +159,12 @@ p {
     font-family: var(--primary-font);
 }
 
-#icons {
-    display: inline;
-    justify-self: end;
-}
-
 /* videos */
 
 .iframe {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 /* cards */
@@ -209,7 +226,7 @@ p {
     }
 
     .cards {
-        width: 50vw;
+        width: 70vw;
     }
 }
 
@@ -224,10 +241,11 @@ p {
 
 #footer-details {
     background-color: #ddd;
-    width: 65vw;
+    width: 70vw;
     display: block;
     text-align: right;
     padding: 1em;
+    font-family: var(--primary-font);
 }
 
 #footer {
@@ -242,4 +260,20 @@ p {
 #footer li a {
     text-decoration: none;
     color: black
+}
+
+
+@media screen and (max-width : 600px) {
+    #check-3 {
+        display: flex;
+        justify-content: center;
+        background-color: #ddd;
+    }
+
+
+    #footer-details {
+        display: inline;
+        text-align: right;
+        padding: 1em;
+    }
 }
