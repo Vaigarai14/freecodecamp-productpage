@@ -6,31 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product-Landing Page</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="./main.js"></script>
 </head>
 
 <body>
     <header id="header">
-        <div id="navs">
-            <img src="./product-landing-page-logo.png" alt="logo-img" id="header-img">
-            <nav id="nav-bar">
-                <li class="nav-link"><a href="">Features</a></li>
-                <li class="nav-link"><a href="">How It Works</a></li>
-                <li class="nav-link"><a href="">Pricing</a></li>
-            </nav>
+        <div class="check">
+            <div id="navs">
+                <img src="./product-landing-page-logo.png" alt="logo-img" id="header-img">
+                <nav id="nav-bar">
+                    <li class="nav-link"><a href="">Features</a></li>
+                    <li class="nav-link"><a href="">How It Works</a></li>
+                    <li class="nav-link"><a href="">Pricing</a></li>
+                </nav>
+            </div>
         </div>
         <!-- main title -->
-        <div id="form">
+        <form id="form">
             <p>Handcrafted,home-made masterpieces</p>
             <div id="dum">
                 <input type="email" name="email" id="email" placeholder="Enter your email address">
             </div>
             <div id="primary-btn">
-                <input type="button" value="GET STARTED" id="submit">
+                <input type="submit" value="GET STARTED" id="submit">
+            </div>
+        </form>
+        <!-- features -->
+        <div id="align">
+            <div id="icons">
+                <img src="https://api.iconify.design/bi:fire.svg?color=%23ff8c00" alt="icons-fire" class="icons fire">
+                <img src="https://api.iconify.design/fa6-solid:truck.svg?color=%23ff8c00" alt="icons-fire"
+                    class="icons fire">
+                <img src="https://api.iconify.design/carbon:battery-half.svg?color=%23ff8c00" alt="icons-fire"
+                    class="icons fire">
+            </div>
+            <div id="main-content">
+                <!-- <div id="icons"> -->
+                <div class="features">
+                    <p class="heading">Premium Materials</p>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity
+                        of
+                        your purchase.</p>
+                </div>
+                <div class="features">
+                    <p class="heading">Fast Shipping</p>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide
+                        free
+                        returns if you are not satisfied.</p>
+                </div>
+                <div class="features">
+                    <p class="heading">Quality Assurance</p>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and
+                        test
+                        the pitch of your instrument.</p>
+                </div>
             </div>
         </div>
-        <!-- features -->
-        <div></div>
+        <!-- videos -->
+        <div class="iframe">
+            <iframe id="video" src="https://www.youtube.com/embed/y8Yv4pnO7qc" width="560" height="315"
+                title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <!-- Three cards -->
+        <div id="check-2">
+            <div id=cards-row>
+                <div class="cards one">
+                    <p>TENOR TROMBONE</p>
+                    <p><span>$600</span></p>
+                    <p>Lorem, ipsum.</p>
+                    <p>Lorem, ipsum.</p>
+                    <p>Lorem, ipsum dolor.</p>
+                    <p>Lorem, ipsum.</p>
+                    <input type="submit" value="SELECT" id="select">
+                </div>
+                <div class="cards secound">
+                    <p>TENOR TROMBONE</p>
+                    <p><span>$900</span></p>
+                    <p>Lorem, ipsum.</p>
+                    <p>Lorem, ipsum.</p>
+                    <p>Lorem, ipsum dolor.</p>
+                    <p>Lorem, ipsum.</p>
+                    <input type="submit" value="SELECT" id="select">
+                </div>
+
+                <div class="cards third">
+                    <p>TENOR TROMBONE</p>
+                    <p><span>$1200</span></p>
+                    <p>Lorem, ipsum.</p>
+                    <p>Lorem, ipsum.</p>
+                    <p>Lorem, ipsum dolor.</p>
+                    <p>Lorem, ipsum.</p>
+                    <input type="submit" value="SELECT" id="select">
+                </div>
+            </div>
+        </div>
+        <!-- footers  -->
+        <div id = "check-3">
+            <div id="footer-details">
+                <div id="footer">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </div>
+                <p>Copyright 2016, Original Trombones</p>
+            </div>
+        </div>
     </header>
 </body>
 
