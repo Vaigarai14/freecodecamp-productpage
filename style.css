@@ -112,27 +112,6 @@ p {
     max-width: max-content;
 }
 
-
-@media screen and (max-width : 600px) {
-
-    #feature {
-        text-align: center;
-        margin: 3rem;
-    }
-
-    #iconed {
-        display: flex;
-        justify-content: center;
-        margin: 1em;
-    }
-
-    .iframe {
-        overflow: hidden;
-    }
-
-}
-
-
 /* features */
 
 #feature {
@@ -149,14 +128,14 @@ p {
 
 .icons {
     display: block;
-    width: 3.5rem;
+    width: 3.8rem;
     color: var(--btn-color);
-    margin: 0;
+    margin: 0 5em;
 }
 
 .features .heading {
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-family: var(--primary-font);
 }
 
@@ -171,6 +150,27 @@ p {
     justify-content: center;
     overflow: hidden;
 }
+
+
+
+@media screen and (max-width : 600px) {
+
+    .paras {
+        text-align: center;
+    }
+
+    .features {
+        display: inline-block;
+        margin-bottom: 5em;
+    }
+
+    .icons,
+    .paras p {
+        padding-bottom: 0.5em;
+    }
+
+}
+
 
 /* cards */
 
