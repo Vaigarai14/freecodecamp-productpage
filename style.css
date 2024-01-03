@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-font: 'Lato', sans-serif;
+    --btn-color: #f1c40f;
+}
+
+#navs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2em;
+}
+
+#header img {
+    width: 20em;
+    height: 2em;
+}
+
+#nav-bar {
+    display: inline-flex;
+    padding: 2em;
+}
+
+.nav-link a {
+    color:black;
+    text-decoration: none;
+    padding: 2em;
+}
+
+#nav-bar li {
+    list-style: none;
+}
+
+/* Main Title */
+
+#form>p,
+#dum,
+#primary-btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+#form>p,
+#primary-btn {
+    font-weight: 700;
+    font-size: 1.7em;
+    font-family: var(--primary-font);
+}
+
+#form>p {
+    margin: 0.1em;
+}
+
+#dum>#email {
+    padding: 0.3rem;
+    width: 15rem;
+}
+
+#primary-btn>#submit {
+    padding: 0.2rem 1.2em;
+    background-color: var(--btn-color);
+    font-size: medium;
+    font-weight:900;
+    border: none;
+    cursor: pointer;
+}
